@@ -33,7 +33,7 @@ class MyStack {
     }
 }
 
-class Solution {
+class ValidParenthesis {
     public boolean isValid(String input) {
         MyStack stack = new MyStack();
         for(int i=0; i < input.length(); i++){
@@ -52,10 +52,6 @@ class Solution {
 
         }
 
-        if(stack.size() == 0){
-            return true;
-        } else{
-            return false;
-        }
+        return stack.size() == 0;
     }
 }
