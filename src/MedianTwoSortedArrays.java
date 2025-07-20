@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class SortedArrays {
+public class MedianTwoSortedArrays {
 
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
 
@@ -31,13 +31,4 @@ public class SortedArrays {
             return merged[(merged.length / 2)];
         }
     }
-}
-
-public void main(String[] args) {
-    SortedArrays clssy = new SortedArrays();
-    int[] nums1 = {1, 2};
-    int[] nums2 = {3, 4};
-    System.out.println(clssy.findMedianSortedArrays(nums1, nums2));
-
-
 }
