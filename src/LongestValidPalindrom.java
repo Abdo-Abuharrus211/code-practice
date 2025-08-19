@@ -1,11 +1,10 @@
-public static class LongestValidPalindrome {
+class LongestValidPalindrome {
 
     public String longestPalindrome(String input) {
         int len = input.length();
         if (len <= 1) {
             return input;
         }
-
 
         if (input.charAt(0) != input.charAt(len - 1) && len == 2) {
             return longestPalindrome(input.substring(0, len - 1));
@@ -16,9 +15,4 @@ public static class LongestValidPalindrome {
         }
 
     }
-}
-
-public static void main(String[] args) {
-    LongestValidPalindrome lol = new LongestValidPalindrome();
-    System.out.println(lol.longestPalindrome(("ac")));
 }
